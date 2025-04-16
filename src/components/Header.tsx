@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <div className="bg-slate-600 flex justify-between px-10 py-3">
       <div className="flex items-center gap-3">
-        <img className="w-12 h-12" src="./public/planto.png" alt="" />
+        <img className="w-12 h-12" src="/planto.png" alt="planto" />
         <p className="text-white font-black text-xl font-inter">Planto.</p>
       </div>
       <div className="flex items-center">
