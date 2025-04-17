@@ -1,7 +1,11 @@
 import Layout from "./pages/Layout";
 
 const App = () => {
-  return <Layout />;
+  return (
+    <div className="bg-hero min-h-[260vh]">
+      <Layout />;
+    </div>
+  );
 };
 
 export default App;

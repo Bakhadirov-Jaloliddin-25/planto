@@ -8,3 +8,52 @@
 @theme {
   --font-inter: Inter;
 }
+
+@layer utilities {
+  .bg-hero {
+    background-image: url("./assets/images/hero.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+@layer components {
+  .container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  @media (min-width: 600px) {
+    .container {
+      max-width: 600px;
+    }
+  }
+
+  @media (min-width: 728px) {
+    .container {
+      max-width: 728px;
+    }
+  }
+
+  @media (min-width: 984px) {
+    .container {
+      max-width: 984px;
+    }
+  }
+
+  @media (min-width: 1040px) {
+    .container {
+      max-width: 1040px;
+    }
+  }
+
+  @media (min-width: 1308px) {
+    .container {
+      max-width: 1308px;
+    }
+  }
+}
