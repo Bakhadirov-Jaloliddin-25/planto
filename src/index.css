@@ -9,6 +9,11 @@
   --font-inter: Inter;
 }
 
+body {
+  font-family: Inter;
+  color: white;
+}
+
 @layer utilities {
   .bg-hero {
     background-image: url("./assets/images/hero.png");
@@ -23,37 +28,60 @@
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
   }
 
-  @media (min-width: 600px) {
+  @media (min-width: 640px) {
     .container {
-      max-width: 600px;
+      max-width: 640px;
     }
   }
 
-  @media (min-width: 728px) {
+  @media (min-width: 768px) {
     .container {
-      max-width: 728px;
+      max-width: 768px;
     }
   }
 
-  @media (min-width: 984px) {
+  @media (min-width: 1024px) {
     .container {
-      max-width: 984px;
+      max-width: 1024px;
     }
   }
 
-  @media (min-width: 1040px) {
+  @media (min-width: 1280px) {
     .container {
-      max-width: 1040px;
+      max-width: 1200px;
     }
   }
 
-  @media (min-width: 1308px) {
+  @media (min-width: 1536px) {
     .container {
-      max-width: 1308px;
+      max-width: 1400px;
     }
   }
+}
+
+.custom-dropdown .ant-dropdown-menu {
+  font-family: Inter;
+  background-color: #222c1d;
+  border-radius: 8px;
+}
+
+.custom-dropdown .ant-dropdown-menu-item {
+  padding: 8px 16px;
+  transition: background-color 0.2s ease;
+}
+
+.custom-dropdown .ant-dropdown-menu-item .ant-dropdown-menu-title-content {
+  font-size: 20px;
+  padding: 10px 20px 10px 10px;
+  color: #ffffff;
+}
+
+.custom-dropdown
+  .ant-dropdown-menu-item:hover
+  .ant-dropdown-menu-title-content {
+  color: #4d8859;
 }
